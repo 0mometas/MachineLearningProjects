@@ -19,7 +19,8 @@ import pandas as pd
 class Manipulation:
 
     @staticmethod
-    def read_data(data: Union[str, pd.DataFrame], **kwargs):
+    def read_data(data: Union[str, pd.DataFrame]
+                  ) -> pd.DataFrame:
         """
         Read the data.
 

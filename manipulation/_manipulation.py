@@ -9,7 +9,7 @@
 
 import os
 from typing import Union
-
+from glob import glob1
 import pandas as pd
 
 
@@ -36,6 +36,7 @@ class Manipulation:
                 pass
 
             elif os.path.isdir(data):
+                data = glob1(data, ".")
                 data = os.listdir(data)[-1]
 
             if data.split(".")[-1].startswith("csv"):
